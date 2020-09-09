@@ -1,6 +1,6 @@
 {
   "name": "vue-keys",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue components for interacting with a keyboard",
   "main": "index.js",
   "scripts": {
