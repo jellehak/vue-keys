@@ -8,7 +8,7 @@ import vueKeys from 'vue-keys'
 Vue.use(vueKeys)
 ```
 
-# Usages
+# Usage
 
 ```html
 <Keyboard
