@@ -1,5 +1,13 @@
 Vue components for interacting with a keyboard
 
+# Installation
+```npm i vue-keys```
+
+```
+import vueKeys from 'vue-keys'
+Vue.use(vueKeys)
+```
+
 # Usages
 
 ```html
