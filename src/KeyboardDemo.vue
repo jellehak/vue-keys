@@ -1,5 +1,4 @@
 <script>
-
 export default {
   data: vm => ({
     down: null,
@@ -36,7 +35,8 @@ export default {
       :actions="[
         { name: 'selectall', keys: [17, 65] },
         { name: 'selectall', keys: [91, 65] },
-        { name: 'delete', keys: [$keys.backspace] }
+        { name: 'delete', keys: [$keys.backspace] },
+        { name: 'delete', keys: [9] }
       ]"
       @action="onAction"
     >

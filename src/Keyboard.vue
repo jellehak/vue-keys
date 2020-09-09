@@ -1,7 +1,7 @@
 <script>
 export default {
   props: {
-    combinations: {
+    actions: {
       type: Array,
       default: () => ([
         { name: 'selectall', keys: [17, 65] },
@@ -21,7 +21,7 @@ export default {
 
   methods: {
     keydown (e) {
-      const { combinations } = this
+      const { actions } = this
 
       // Get all actual pressed keyCodes from event
       const pressedKeycodes = [
@@ -34,8 +34,9 @@ export default {
 
       // Check matches with actions
       const compare = (array1, array2) => array1.length === array2.length && array1.sort().every(function (value, index) { return value === array2.sort()[index] })
-      const matches = combinations.map(elem => {
-        return compare(elem.keys, pressedKeycodes) && elem
+      const matches = actions.map(elem => {
+        const isMatch = compare(elem.keys, pressedKeycodes)
+        return isMatch && elem
       })
         .filter(elem => elem) // Remove falses
 
