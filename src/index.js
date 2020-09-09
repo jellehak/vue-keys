@@ -1,0 +1,6 @@
+export { default as Keyboard } from './Keyboard.vue'
+export { default as KeyboardBase } from './KeyboardBase.vue'
+export { default as KeyboardDemo } from './KeyboardDemo.vue'
+export { default as KEYCODES } from './KEYCODES.js'
+export { default as KEYLOCATIONS } from './KEYLOCATIONS.js'
+export { default as KEYS } from './KEYS.js'
